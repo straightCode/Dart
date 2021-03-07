@@ -1,0 +1,35 @@
+@import "zero-style.scss";
+@import "vars.scss";
+@import "buttons.scss";
+@import "blocks/burger.scss";
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 80px;
+	@media(max-width:860px){
+		padding: 0 10px;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+@import "blocks/header.scss";
+@import "blocks/easy.scss";
+@import "blocks/counts.scss";
+@import "blocks/services.scss";
+@import "blocks/reviewes.scss";
+@import "blocks/team.scss";
+@import "blocks/contact.scss";
+@import "blocks/footer.scss";

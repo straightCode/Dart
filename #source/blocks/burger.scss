@@ -1,0 +1,36 @@
+.burger {
+    display: none;
+}
+@media (max-width:860px){
+    .burger {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 4px;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            top: 8px;
+            left: 0px;
+            position: absolute;
+            border-radius: 4px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            top: -8px;
+            left: 0px;
+            position: absolute;
+            border-radius: 4px;
+        }
+    }
+}
